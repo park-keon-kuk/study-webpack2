@@ -1,2 +1,2 @@
-# study-webpack2
-webpack2  공부입니다.
+# 1장 간단한 bundle.js 만들기
+
