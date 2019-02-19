@@ -1,5 +1,5 @@
-# study-webpack2
-> webpack2  공부입니다.
+# study-webpack
+> webpack 공부입니다.
 
 ## version
 > node 10.x
