@@ -8,3 +8,5 @@ npm i -D style-loader css-loader
 npm i file-loader
 ```
 > i는 install, -D는 --save-dev 의 약어입니다.
+
+<script src="./dist/bundle.js"></script>
