@@ -1,7 +1,5 @@
 # 4장 Development
 
-----------
-
 >3장 Output Management에서 이어집니다.
 
 ## 실습에 필요한 설치 파일들
