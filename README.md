@@ -3,7 +3,6 @@
 ## 실습에 필요한 설치 파일들
 
 ```bash
-npm i -D babel-loader @babel/core @babel/preset-env
 npm i -D webpack webpack-cli
 npm i --save lodash
 ```
