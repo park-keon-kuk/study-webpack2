@@ -4,7 +4,7 @@
 
 ```bash
 npm i -D babel-loader @babel/core @babel/preset-env
-npm i -D webpack webpack-dev-server webpack-cli
+npm i -D webpack webpack-cli
 npm i --save lodash
 ```
 
