@@ -18,11 +18,16 @@ function component() {
     return el;
 }
 
-document.body.appendChild(component());
+// 수정 전
+let el = component();
+document.body.appendChild(el);
 
 if (module.hot) {
     module.hot.accept('./print.js', function () {
         console.log('Accepting the updated printMe module!');
-        printMe();
+
+        document.body.removeChild(el);
+        el = component();
+        document.body.appendChild(el);
     })
 }
