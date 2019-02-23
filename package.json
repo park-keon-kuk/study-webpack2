@@ -7,8 +7,10 @@
     "build": "webpack",
     "watch": "webpack --watch",
     "webpack-dev-server": "webpack-dev-server --open",
+    "wds": "webpack-dev-server --open",
     "node-server": "node server.js",
-    "node-dev-server": "node dev-server.js"
+    "node-dev-server": "node dev-server.js",
+    "nds": "node dev-server.js"
   },
   "keywords": [],
   "author": "",

@@ -79,7 +79,7 @@ package.json에서 script에 다음을 추가하고 실험할 수 있습니다.
 ```json
 {
     "scripts": {
-        "dev-server": "node dev-server.js",
+        "node-dev-server": "node dev-server.js",
     }
 }
 ```
