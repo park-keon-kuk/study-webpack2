@@ -6,7 +6,7 @@ function component() {
 
     // p
     const p = document.createElement('p');
-    p.innerText = _.join(['Hello', 'webpack'], '-');
+    p.innerText = _.join(['Hi', 'webpack'], '-');
     el.appendChild(p);
 
     // btn
