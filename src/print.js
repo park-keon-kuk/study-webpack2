@@ -1,3 +1,4 @@
 export default () => {
-    console.log('I get called from print.js!'); // console을 빼먹었습니다!
+    console.log('I get...');
+    //console.log('Updating print.js...');
 };
