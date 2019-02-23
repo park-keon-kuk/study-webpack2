@@ -9,6 +9,7 @@ module.exports = {
         app: './src/index.js',
     },
     devtool: 'inline-source-map',
+    // webpack-dev-server에서 hot module replacement를 쓸 경우 필요합니다.
     devServer: {
         contentBase: './dist',
         hot: true
@@ -24,6 +25,7 @@ module.exports = {
         new HtmlWebpackPlugin({
             title: 'HMR'
         }),
+        // 이건 어느 방식이득 필수입니다.
         new webpack.HotModuleReplacementPlugin(),
     ],
     output: {
