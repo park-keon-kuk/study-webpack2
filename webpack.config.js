@@ -11,7 +11,12 @@ module.exports = {
         app: './src/index.js',
         print: './src/print.js'
     },
+    // 파일 에러가 어디서 오나 찾아줍니다.
     devtool: 'inline-source-map',
+    // 
+    devServer: {
+        contentBase: './dist'
+    },
     plugins: [
         new CleanWebpackPlugin(['dist/*']),
         new HtmlWebpackPlugin({
