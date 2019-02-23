@@ -127,7 +127,19 @@ eval("module.exports = function(module) {\n\tif (!module.webpackPolyfill) {\n\t\
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! lodash */ \"./node_modules/lodash/lodash.js\");\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(lodash__WEBPACK_IMPORTED_MODULE_0__);\n\r\n\r\nfunction component() {\r\n    const el = document.createElement('div');\r\n\r\n    el.innerText = lodash__WEBPACK_IMPORTED_MODULE_0___default.a.join(['Hello', 'webpack'], '-');\r\n\r\n    return el;\r\n}\r\n\r\ndocument.body.appendChild(component());\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! lodash */ \"./node_modules/lodash/lodash.js\");\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(lodash__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _print_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./print.js */ \"./src/print.js\");\n\r\n\r\n\r\nfunction component() {\r\n    const el = document.createElement('div');\r\n\r\n    // p\r\n    const p = document.createElement('p');\r\n    p.innerText = lodash__WEBPACK_IMPORTED_MODULE_0___default.a.join(['Hello', 'webpack'], '-');\r\n    el.appendChild(p);\r\n\r\n    // btn\r\n    const btn = document.createElement('button');\r\n    btn.innerText = \"Click me and check the console!\";\r\n    btn.onclick = _print_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"];\r\n    el.appendChild(btn);\r\n\r\n    return el;\r\n}\r\n\r\ndocument.body.appendChild(component());\n\n//# sourceURL=webpack:///./src/index.js?");
+
+/***/ }),
+
+/***/ "./src/print.js":
+/*!**********************!*\
+  !*** ./src/print.js ***!
+  \**********************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (() => {\r\n    console.log('I get called from print.js!');\r\n});\n\n//# sourceURL=webpack:///./src/print.js?");
 
 /***/ })
 

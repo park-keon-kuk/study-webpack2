@@ -1,9 +1,19 @@
 import _ from 'lodash';
+import printMe from './print.js';
 
 function component() {
     const el = document.createElement('div');
 
-    el.innerText = _.join(['Hello', 'webpack'], '-');
+    // p
+    const p = document.createElement('p');
+    p.innerText = _.join(['Hello', 'webpack'], '-');
+    el.appendChild(p);
+
+    // btn
+    const btn = document.createElement('button');
+    btn.innerText = "Click me and check the console!";
+    btn.onclick = printMe;
+    el.appendChild(btn);
 
     return el;
 }
